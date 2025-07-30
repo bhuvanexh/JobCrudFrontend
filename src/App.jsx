@@ -4,6 +4,7 @@ import AddJob from "./pages/AddJobs.jsx";
 import JobDetails from "./pages/JobDetails.jsx";
 
 function App() {
+
   return (
     <Routes>
       <Route path="/" element={<Home />} />
