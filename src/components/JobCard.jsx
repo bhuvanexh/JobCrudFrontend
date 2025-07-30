@@ -22,7 +22,7 @@ function JobCard({ job }) {
         return () => document.removeEventListener("mousedown", handleClickOutside);
     }, []);
 
-    const goToJob = () => navigate(`/job/${job.id}`);
+    const goToJob = () => navigate(`/job/${job._id}`);
 
     return (
         <div className="border rounded-xl shadow-sm p-4 bg-white relative hover:shadow-md transition">
