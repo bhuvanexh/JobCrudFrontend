@@ -93,7 +93,7 @@ function FilterBar({ filters, setFilters, resetFilters, metadata }) {
                 className={`flex items-center gap-2 px-3 py-2 text-sm rounded mt-2 sm:mt-0
                     ${noFiltersApplied
                         ? "bg-gray-100 text-gray-400 cursor-not-allowed"
-                        : "bg-red-100 hover:bg-red-200 text-red-700"}
+                        : "bg-red-100 cursor-pointer hover:bg-red-200 text-red-700"}
                 `}            >
                 <FaUndo />
                 Reset Filters

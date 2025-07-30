@@ -38,7 +38,7 @@ function JobTableRow({ job, last }) {
             <td className="p-3">{job.type}</td>
             <td className="p-3 text-right relative">
                 <button
-                    className="p-2 text-gray-600 hover:text-black"
+                    className="p-2 text-gray-600 hover:text-black cursor-pointer"
                     onClick={toggleMenu}
                 >
                     <BsThreeDotsVertical size={18} />
@@ -51,7 +51,7 @@ function JobTableRow({ job, last }) {
                     >
                         <button
                             onClick={goToJob}
-                            className="flex items-center gap-2 w-full px-4 py-2 text-sm hover:bg-gray-100 text-left"
+                            className="flex items-center cursor-pointer gap-2 w-full px-4 py-2 text-sm hover:bg-gray-100 text-left"
                         >
                             <HiOutlineEye className="text-gray-600" size={16} />
                             View Job

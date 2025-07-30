@@ -22,7 +22,7 @@ function Pagination({ page, totalPages, limit, onPageChange, onLimitChange }) {
 
             <div className="flex items-center gap-4">
                 <button
-                    className="px-3 py-1 border rounded disabled:opacity-50"
+                    className="px-3 py-1 border cursor-pointer rounded disabled:cursor-not-allowed disabled:opacity-50"
                     onClick={() => onPageChange(page - 1)}
                     disabled={page <= 1}
                 >
@@ -32,7 +32,7 @@ function Pagination({ page, totalPages, limit, onPageChange, onLimitChange }) {
                     Page {page} of {totalPages}
                 </span>
                 <button
-                    className="px-3 py-1 border rounded disabled:opacity-50"
+                    className="px-3 py-1 border cursor-pointer disabled:cursor-not-allowed rounded disabled:opacity-50"
                     onClick={() => onPageChange(page + 1)}
                     disabled={page >= totalPages}
                 >

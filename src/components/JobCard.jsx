@@ -30,7 +30,7 @@ function JobCard({ job }) {
             <div className="absolute top-3 right-3">
                 <button
                     onClick={toggleMenu}
-                    className="p-1 text-gray-600 hover:text-black"
+                    className="p-1 cursor-pointer text-gray-600 hover:text-black"
                 >
                     <BsThreeDotsVertical size={18} />
                 </button>
@@ -42,7 +42,7 @@ function JobCard({ job }) {
                     >
                         <button
                             onClick={goToJob}
-                            className="flex items-center gap-2 w-full px-4 py-2 text-sm hover:bg-gray-100 text-left"
+                            className="flex items-center gap-2 cursor-pointer w-full px-4 py-2 rounded-md text-sm hover:bg-gray-100 text-left"
                         >
                             <HiOutlineEye className="text-gray-600" size={16} />
                             View Job

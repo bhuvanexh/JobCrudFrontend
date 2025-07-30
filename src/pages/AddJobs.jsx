@@ -25,7 +25,7 @@ function AddJob() {
         <div className="p-6 max-w-3xl mx-auto">
             <button
                 onClick={() => navigate("/")}
-                className="flex items-center gap-2 text-blue-600 hover:underline mb-4"
+                className="flex items-center cursor-pointer gap-2 text-blue-600 hover:underline mb-4"
             >
                 <FaArrowLeft />
                 Back to Jobs
