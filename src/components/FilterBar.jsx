@@ -30,14 +30,17 @@ function FilterBar({ filters, setFilters, resetFilters, metadata }) {
                     <input
                         type="text"
                         value={searchText}
-                        onChange={(e) => setSearchText(e.target.value)}
-                        placeholder="Search jobs, companies or locations..."
+                        onChange={(e) => {
+                            const rawValue = e.target.value;
+                            const cleanedValue = rawValue.replace(/\s+/g, ' ').trimStart();
+                            setSearchText(cleanedValue);
+                        }} placeholder="Search jobs, companies or locations..."
                         className="w-full border px-4 py-2 rounded pr-10"
                     />
                     {searchText && (
                         <button
                             onClick={clearSearch}
-                            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-black"
+                            className="absolute right-2 top-1/2 cursor-pointer -translate-y-1/2 text-gray-500 hover:text-black"
                         >
                             <FaTimes />
                         </button>
